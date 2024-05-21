@@ -3,7 +3,7 @@ function isPalindrome(str = "") {
     return true;
   }
 
-  if (str[0] !== str[str.length - 1]) {
+  if (!str[0].startsWith(str.length - 1)) {
     return false;
   }
 

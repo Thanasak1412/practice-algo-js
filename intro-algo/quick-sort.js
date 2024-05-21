@@ -12,13 +12,13 @@ function quickSort(array) {
   const middle = [];
   const right = [];
 
-  for (i = 0; i < array.length; i++) {
-    if (array[i] < array[pivot]) {
-      left.push(array[i]);
-    } else if (array[i] === array[pivot]) {
-      middle.push(array[i]);
+  for (const element of array) {
+    if (element < array[pivot]) {
+      left.push(element);
+    } else if (element === array[pivot]) {
+      middle.push(element);
     } else {
-      right.push(array[i]);
+      right.push(element);
     }
   }
 
